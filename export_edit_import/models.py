@@ -1,7 +1,18 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from django.contrib.contenttypes.models import ContentType
-from misterpato_core.models import TimeStampedModel
+
+
+class TimeStampedModel(models.Model):
+    """
+    An abstract base class model that provides self-updating
+    ``created`` and ``modified`` fields.
+    """
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        abstract = True
 
 EXAMPLE_RELATED_MODELS_MAP = {
     'model_class_name': 'model_class_name',

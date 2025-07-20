@@ -1,17 +1,2 @@
-include README.md
-include LICENSE
-include MANIFEST.in
-recursive-include django_export_edit_import/templates *
-recursive-include django_export_edit_import/static *
-recursive-include django_export_edit_import/migrations *.py
-recursive-include django_export_edit_import/resources *
-global-exclude __pycache__
-global-exclude *.py[co]
-global-exclude *.orig
-global-exclude *.rej
-global-exclude *.bak
-global-exclude *~
-global-exclude .coverage
-global-exclude .git
-global-exclude .tox
-global-exclude .DS_Store
+recursive-include export_edit_import/migrations *.py
+exclude LICENSE
