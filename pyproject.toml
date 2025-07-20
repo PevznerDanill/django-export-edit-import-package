@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "django-export-edit-import"
 version = "1.0.0"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Daniil Pevzner", email = "pevzner.daniil@gmail.com"},
 ]
 description = "A Django app for exporting, editing, and importing data with Excel files"
 readme = "README.md"
@@ -47,9 +47,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/django-export-edit-import"
-Repository = "https://github.com/yourusername/django-export-edit-import.git"
-"Bug Tracker" = "https://github.com/yourusername/django-export-edit-import/issues"
+Homepage = "https://github.com/PevznerDanill/django-export-edit-import-package"
+Repository = "https://github.com/PevznerDanill/django-export-edit-import-package"
+"Bug Tracker" = "https://github.com/PevznerDanill/django-export-edit-import-package/issues"
 
 [tool.setuptools]
 packages = ["django_export_edit_import"]
