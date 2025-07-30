@@ -243,7 +243,7 @@ class DatabaseProcessor:
                     final_data = field_method(final_data, column, value)
                 
                 else:
-                    if value != '' or column.get('field_name') in self.required_fields:
+                    if value is not None or column.get('field_name') in self.required_fields:
                         final_data[column.get('field_name')] = value
                         
         final_data = self.add_additional_data_in_row(final_data, data)

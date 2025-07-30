@@ -392,7 +392,7 @@ class ExcelDataProcessor:
             # Check ID duplicates (for update/delete operations)
             if id_label in row_data:
                 id_value = row_data[id_label]
-                if id_value in seen_ids:
+                if bool(id_value) and id_value in seen_ids:
                     # Move to error rows
                     row[PROCESSED_ROW_KEYS.HAS_ERRORS.value] = True
                     row[PROCESSED_ROW_KEYS.ERRORS.value].append(f"{_('ID duplicated in the file')}: {id_value}")
